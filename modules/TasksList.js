@@ -37,18 +37,18 @@ class Tasks {
         this.setHtml();
         this.setup();
     }
- 
+
     setupRemove() {
-         const hamburger = () => {
-        const remove = document.querySelectorAll('.remove');
-        remove.forEach((rmBtn) => {
-            const hamb = document.getElementById(rmBtn.id.replace('remove', 'myLinks'));
-            rmBtn.addEventListener('click', () => {
-                rmBtn.style.display = 'none';
-                hamb.style.display = 'flex';
+        hamburger = () => {
+            const remove = document.querySelectorAll('.remove');
+            remove.forEach((rmBtn) => {
+                const hamb = document.getElementById(rmBtn.id.replace('remove', 'myLinks'));
+                rmBtn.addEventListener('click', () => {
+                    rmBtn.style.display = 'none';
+                    hamb.style.display = 'flex';
+                });
             });
-        });
-    };
+        };
         const del = document.querySelectorAll('.del');
         del.forEach((button) => {
             const removeFunc = () => {
