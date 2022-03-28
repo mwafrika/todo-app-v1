@@ -5,7 +5,6 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
-        hamburger: './modules/hamburger.js',
         Tasks: './modules/Tasks.js',
         TasksList: './modules/TasksList.js',
     },

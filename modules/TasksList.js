@@ -1,5 +1,4 @@
-import hamburger from './modules/hamburger.js';
-import Task from './modules/Tasks.js';
+import Task from './Tasks.js';
 
 class Tasks {
     constructor() {
@@ -38,9 +37,19 @@ class Tasks {
         this.setHtml();
         this.setup();
     }
+    hamburger = () => {
+        const remove = document.querySelectorAll('.remove');
+        remove.forEach((rmBtn) => {
+            const hamb = document.getElementById(rmBtn.id.replace('remove', 'myLinks'));
+            rmBtn.addEventListener('click', () => {
+                rmBtn.style.display = 'none';
+                hamb.style.display = 'flex';
+            });
+        });
+    };
 
     setupRemove() {
-        hamburger();
+        this.hamburger();
         const del = document.querySelectorAll('.del');
         del.forEach((button) => {
             const removeFunc = () => {
