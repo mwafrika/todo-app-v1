@@ -14,7 +14,7 @@
 
 ## Live
 
-[Live Demo](https://ciraganenicole.github.io/To-do-list/dist/index.html)
+[Live Demo](https://ciraganenicole.github.io/To-do-list/)
 
 ## Getting Started
 
