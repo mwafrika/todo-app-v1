@@ -38,7 +38,9 @@ class Tasks {
         this.setup();
     }
 
-    hamburger = () => {
+
+    setupRemove() {
+          hamburger {
         const remove = document.querySelectorAll('.remove');
         remove.forEach((rmBtn) => {
             const hamb = document.getElementById(rmBtn.id.replace('remove', 'myLinks'));
@@ -48,9 +50,6 @@ class Tasks {
             });
         });
     };
-
-    setupRemove() {
-        this.hamburger()
         const del = document.querySelectorAll('.del');
         del.forEach((button) => {
             const removeFunc = () => {
