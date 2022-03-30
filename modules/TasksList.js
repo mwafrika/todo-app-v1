@@ -40,7 +40,6 @@ class Tasks {
 
 
     setupRemove() {
-          hamburger {
         const remove = document.querySelectorAll('.remove');
         remove.forEach((rmBtn) => {
             const hamb = document.getElementById(rmBtn.id.replace('remove', 'myLinks'));
@@ -49,7 +48,6 @@ class Tasks {
                 hamb.style.display = 'flex';
             });
         });
-    };
         const del = document.querySelectorAll('.del');
         del.forEach((button) => {
             const removeFunc = () => {
